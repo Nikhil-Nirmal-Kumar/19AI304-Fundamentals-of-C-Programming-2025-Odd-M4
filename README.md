@@ -362,8 +362,37 @@ To build a C program to convert a string as described above, using a user-define
 ### Step 6: 
  Stop
 # Program:
-
+```
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+void convertFirstCLastC(char str[]){
+    int len=strlen(str);
+    if (len>0){
+        str[0]=toupper(str[0]);
+    }
+    for (int i=1;i<len-1;i++){
+        if (str[i]==' '){
+            str[i-1]=toupper(str[i-1]);
+            str[i+1]=toupper(str[i+1]);
+        }
+    }
+    if (len>1){
+        str[len-1]=toupper(str[len-1]);
+    }
+}
+int main() {
+    char str[100];
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+    str[strcspn(str, "\n")]='\0';
+    convertFirstCLastC(str);
+    printf("Modified string: %s\n",str);
+    return 0;
+}
+```
 # Output:
+<img width="429" height="94" alt="image" src="https://github.com/user-attachments/assets/7fd62ba1-9aab-47f1-b7da-72a7fdaee304" />
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
