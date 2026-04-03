@@ -282,41 +282,6 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 7: 
   Stop
 # Program:
-# Output:
-# Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
-
-
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd-M4
-# IAPR-4- Module 4 - FoC
-# Ex.No:20
-  Build a C program to convert a string such that the first and last characters, as well as the characters before and after each space, are converted to uppercase. Implement this using a user-defined parameterized function without return.
-# Date : 
-# Aim:
-To build a C program to convert a string as described above, using a user-defined parameterized function without return convertFirstCLastC(char str[]).
-# Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.  
-### Step 3: 
-  Declare a user-defined void function `convertFirstCLastC(char str[])` that takes the string as a parameter.
-### Step 4: 
- Inside `convertFirstCLastC(char str[])` function:
- - Find the length of the string `len`.  
- - Convert the first character `str[0]` to uppercase.  
- - Loop through the string from index `1` to `len-2`:  
-   - If a character is a space, capitalize the character before and after it.  
- - Convert the last character `str[len-1]` to uppercase.
-### Step 5: 
- In `main()` function:
- - Declare a string `str[100]`.  
- - Read the input string from the user.  
- - Call the function `convertFirstCLastC(char str[])`.  
- - Print the modified string.
-### Step 6: 
- Stop
-# Program:
 ```
 #include <stdio.h>
 
@@ -362,6 +327,43 @@ int main() {
 ```
 # Output:
 <img width="680" height="192" alt="image" src="https://github.com/user-attachments/assets/f161f373-e553-4dbb-ae18-caabac356894" />
+
+# Result: 
+Thus, the program was implemented and executed successfully, and the required output was obtained.
+
+
+# 19AI304-Fundamentals-of-C-Programming-2025-Odd-M4
+# IAPR-4- Module 4 - FoC
+# Ex.No:20
+  Build a C program to convert a string such that the first and last characters, as well as the characters before and after each space, are converted to uppercase. Implement this using a user-defined parameterized function without return.
+# Date : 
+# Aim:
+To build a C program to convert a string as described above, using a user-defined parameterized function without return convertFirstCLastC(char str[]).
+# Algorithm:
+### Step 1:
+  Start
+### Step 2: 
+  Include the standard input-output library: #include<stdio.h>.  
+### Step 3: 
+  Declare a user-defined void function `convertFirstCLastC(char str[])` that takes the string as a parameter.
+### Step 4: 
+ Inside `convertFirstCLastC(char str[])` function:
+ - Find the length of the string `len`.  
+ - Convert the first character `str[0]` to uppercase.  
+ - Loop through the string from index `1` to `len-2`:  
+   - If a character is a space, capitalize the character before and after it.  
+ - Convert the last character `str[len-1]` to uppercase.
+### Step 5: 
+ In `main()` function:
+ - Declare a string `str[100]`.  
+ - Read the input string from the user.  
+ - Call the function `convertFirstCLastC(char str[])`.  
+ - Print the modified string.
+### Step 6: 
+ Stop
+# Program:
+
+# Output:
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
